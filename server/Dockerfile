@@ -8,5 +8,5 @@ RUN gem install bundler && \
     bundle config --global frozen 1 && \
     bundle install
 
-COPY app.rb ./
+COPY app.rb event_generator.rb ./
 CMD exec bundle exec thin start

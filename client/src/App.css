@@ -1,18 +1,64 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    border-bottom: 1px solid black;
+    font-size: large;
+    text-align: center;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#chat {
+    flex: 1;
+    font-size: large;
+    overflow-y: scroll;
+}
+#message-text {
+    border: 2px solid grey;
+    border-radius: 0.5em;
+    font-size: larger;
+    min-height: 2em;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding-left: 0.5em;
+    width: 95%;
+}
+#message:focus {
+    outline: none;
+}
+#title {
+    border-bottom: 3px solid black;
+    color: green;
+    font-size: xx-large;
+    text-align: center;
+}
+#title.disconnected {
+    color: red;
+}
+#user_window {
+    border: 1px solid black;
+    margin-bottom: 0.5em;
+    height: 100%;
+    width: 10em;
+}
+#users li {
+    list-style-type: none;
+    text-align: center;
+}
+#window {
+    display: flex;
+    flex: 1;
+    margin: 0.5em 0.5em 0 0.5em;
+    min-height: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+#message-send-btn {
+  width: 4%;
+  height: 80%;
+  /* color: white; */
+  /* background-color: blue; */
 }
